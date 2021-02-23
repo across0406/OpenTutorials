@@ -5,6 +5,18 @@ For OpenTutorials study footsteps
 OS: Ubuntu 20.04 LTS
 IDE: Visual Studio Code
 
+## - Notation
+- Without DTD, all elements and attributes should be written in lower letters in default.   
+- The value of attributes should be wrapped in "".   
+- The property value of such id and class cannot be started in number, upper letters, and special characters.   
+- The property value of attributes cannot be started in number and special characters except for upper letters.   
+- When using id, it needs to write in camel notation.   
+- Id is not used for set styles, just used for control DOM.   
+- When using class, it needs to write in hyphen ( - ) notation for distingquishing writing id.   
+- The indentation size is 1 tab. 1 tab size is 2 in default.   
+- When using comment, there is one or more space between comment syntax and the contents.   
+- And also, it needs to write start comment with end comment.   
+
 ## 1. HTML
 > If you check the text of study footsteps, go https://yah.ac/yahac3.
 ### 1-1. Tags
