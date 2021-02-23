@@ -8,24 +8,24 @@ IDE: Visual Studio Code
 ## 1. HTML
 > If you check the text of study footsteps, go https://yah.ac/yahac3.
 ### 1-1. Tags
-> <strong>: Amphasize text
-> <u>: underline
-> <h^[1-6]>: Define the heads of HTML documents. 1 is a most important head, and 6 is less important than other head tags.
-> <br>: new line
-> <p>: paragraph
-> * Without CSS, <br> brings more degree of freedom than <p>. But applying CSS, <p> is available to set space size.
-> <img>: image
->> * Attributes
->>> * src: image source. The type is able to be URL or path.
->>> * width: width ratio
-> <li>: list element
-> <ul>: unordered list
-> <ol>: ordered list
-> <a>: anchor. It is responsible for link function.
->> * Attributes
->>> * href: Hypertext Reference. The type is URL or path.
->>> * target: The value _blank means the linked contents is opened in new window.
->>> * title: anchor tooltip
+> <pre><code><strong></code></pre>: Amphasize text   
+> <pre><code><u></code></pre>: underline   
+> <pre><code><h^[1-6]>:</code></pre> Define the heads of HTML documents. 1 is a most important head, and 6 is less important than other head tags.   
+> <pre><code><br></code></pre>: new line   
+> <pre><code><p></code></pre>: paragraph   
+> * Without CSS, <pre><code><br></code></pre> brings more degree of freedom than <pre><code><p>. But applying CSS, <pre><code><p></code></pre> is available to set space size.   
+> <pre><code><img></code></pre>: image   
+>> * Attributes   
+>>> * src: image source. The type is able to be URL or path.   
+>>> * width: width ratio   
+> <pre><code><li></code></pre>: list element   
+> <pre><code><ul></code></pre>: unordered list   
+> <pre><code><ol></code></pre>: ordered list   
+> <pre><code><a></code></pre>: anchor. It is responsible for link function.   
+>> * Attributes   
+>>> * href: Hypertext Reference. The type is URL or path.   
+>>> * target: The value _blank means the linked contents is opened in new window.   
+>>> * title: anchor tooltip   
 
 
 ### 1-2. Other
