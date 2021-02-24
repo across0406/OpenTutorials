@@ -9,9 +9,24 @@
     <meta charset="utf-8" />
 
     <style>
-        a {
-            color: red;
+        a:link {
+            color: black;
             text-decoration: none;
+        }
+
+        a:visited {
+            color: gray;
+            text-decoration: none;
+        }
+
+        a.current {
+            color: red;
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
         }
     </style>
 
@@ -35,7 +50,7 @@
 
     <ol>
         <li>
-            <a href="html-intro.html" style="text-decoration: underline;">
+            <a href="html-intro.html" class="current">
                 HTML
             </a>
         </li>
@@ -50,7 +65,7 @@
             </a>
         </li>
     </ol>
-    <h1>HTML</h1>
+    <h2>HTML</h2>
     <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/9GkFI1ovBbU" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
