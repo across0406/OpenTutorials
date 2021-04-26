@@ -44,3 +44,21 @@ ol {
 #grid #article {
     padding-left: 25px;
 }
+
+@media(max-width: 800px)
+{
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+
+    #grid ol{
+        border-right: none;
+    }
+
+    #grid #article {
+        border-right: none;
+        border-top: 1px solid gray;
+    }
+}
