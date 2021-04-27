@@ -21,10 +21,15 @@
                 </div>
                 <div id="main-appearance">
                     <label class="appear-mode-switch">
-                        <input type="checkbox" onclick="changeAppearanceMode()">
-                        <span class="slider round"></span>
+                        <input type="checkbox" id="mode-toggle" onclick="changePreferMode(this)">
+                        <span class="slider round" id="mode-toggle-slider"></span>
                     </label>
                 </div>
+
+                <script>
+                    var prefersDark = judgePreferDark();
+                    initPreferMode(prefersDark);
+                </script>
             </div>
 
             <div id="main-contents-grid">
@@ -47,6 +52,30 @@
                 </ol>
                 <div id="article">
                     <h2>JavaScript</h2>
+                    <script>
+                        function onclicked() {
+                            alert("Hello");
+                        }
+                        function onchanged() {
+                            alert("The text is changed!");
+                        }
+                        function onkeydown() {
+                            alert("Any key is downed!");
+                        }
+                    </script>
+
+                    <div>
+                        <input type="button" value="Hello" onclick="onclicked()">
+                    </div>
+
+                    <div>
+                        <input id=".changed-text" type="text" onchange="onchanged()">
+                    </div>
+
+                    <div>
+                        <input id=".downed-text" type="text" onkeydown="onkeydown()">
+                    </div>
+
                     <p>
                         JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level,
                         dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted
