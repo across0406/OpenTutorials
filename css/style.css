@@ -17,47 +17,116 @@ a.current {
     text-decoration: underline;
 }
 
-h1 {
+#main-container #main-subject-grid {
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    border-bottom: 1px solid gray;
+}
+
+#main-container #main-subject-grid #main-subject h1 {
     text-align: center;
     font-size: 45px;
-    border-bottom: 1px solid gray;
     margin: 0;
     padding: 20px;
 }
 
-ol {
+#main-container #main-subject-grid #main-appearance{
+    text-align: right;
+    padding-right: 20px;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+#main-container #main-subject-grid #main-appearance .appear-mode-switch .slider.round {
+    border-radius: 34px;
+}
+
+#main-container #main-subject-grid #main-appearance .appear-mode-switch .slider.round:before {
+    border-radius: 50%;
+}
+
+#main-contents-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#main-contents-grid ol {
     border-right: 1px solid gray;
     width: 100px;
     margin: 0;
     padding: 20px;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-}
-
-#grid ol {
+#main-contents-grid ol {
     padding-left: 33px;
 }
 
-#grid #article {
+#main-contents-grid #article {
     padding-left: 25px;
 }
 
-@media(max-width: 800px)
-{
-    #grid {
+@media(max-width: 800px) {
+    #main-contents-grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 100px 1fr;
     }
 
-    #grid ol{
+    #main-contents-grid ol {
         border-right: none;
     }
 
-    #grid #article {
+    #main-contents-grid #article {
         border-right: none;
         border-top: 1px solid gray;
     }

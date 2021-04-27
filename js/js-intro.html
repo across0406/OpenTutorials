@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>
+            WEB - JavaScript
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="appear-mode-change.js"></script>
+    </head>
 
-<head>
-    <title>
-        WEB - JavaScript
-    </title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <body>
+        <div id="main-container">
+            <div id="main-subject-grid">
+                <div id="main-subject">
+                    <h1>
+                        <a href="../index.html">
+                            WEB
+                        </a>
+                    </h1>
+                </div>
+                <div id="main-appearance">
+                    <label class="appear-mode-switch">
+                        <input type="checkbox" onclick="changeAppearanceMode()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
 
-<body>
-    <h1>
-        <a href="../index.html">
-            WEB
-        </a>
-    </h1>
-    <div id="grid">
-        <ol>
-            <li>
-                <a href="../html/html-intro.html">
-                    HTML
-                </a>
-            </li>
-            <li>
-                <a href="../css/css-intro.html">
-                    CSS
-                </a>
-            </li>
-            <li>
-                <a href="js-intro.html" class="current">
-                    JavaScript
-                </a>
-            </li>
-        </ol>
-        <div id="article">
-            <h2>JavaScript</h2>
-            <p>
-                JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed,
-                prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS,
-                JavaScript is one
-                of the three core technologies of World Wide Web content production. It is used to make webpages
-                interactive and
-                provide online programs, including video games. The majority of websites employ it, and all modern web
-                browsers
-                support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many
-                JavaScript
-                engines represent a different implementation of JavaScript, all based on the ECMAScript specification,
-                with some
-                engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
-            </p>
+            <div id="main-contents-grid">
+                <ol>
+                    <li>
+                        <a href="../html/html-intro.html">
+                            HTML
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../css/css-intro.html">
+                            CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="js-intro.html" class="current">
+                            JavaScript
+                        </a>
+                    </li>
+                </ol>
+                <div id="article">
+                    <h2>JavaScript</h2>
+                    <p>
+                        JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level,
+                        dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted
+                        programming language. Alongside HTML and CSS, JavaScript is one of the three
+                        core technologies of World Wide Web content production. It is used to make
+                        webpages interactive and provide online programs, including video games. The
+                        majority of websites employ it, and all modern web browsers support it without
+                        the need for plug-ins by means of a built-in JavaScript engine. Each of the many
+                        JavaScript engines represent a different implementation of JavaScript, all based
+                        on the ECMAScript specification, with some engines not supporting the spec
+                        fully, and with many engines supporting additional features beyond ECMA.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
