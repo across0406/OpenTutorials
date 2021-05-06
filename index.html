@@ -4,6 +4,7 @@
         <title>WEB - Welcome</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/theme.js"></script>
     </head>
     <body>
         <div id="main-container">
@@ -17,8 +18,8 @@
                 </div>
                 <div id="main-appearance">
                     <label class="appear-mode-switch">
-                        <input type="checkbox" onclick="changeAppearanceMode()">
-                        <span class="slider round"></span>
+                        <input type="checkbox" id="mode-toggle" onclick="changePreferMode(this)">
+                        <span class="slider round" id="mode-toggle-slider"></span>
                     </label>
                 </div>
             </div>
@@ -56,5 +57,9 @@
                 </div>
             </div>
         </div>
+        <script>
+            var prefersDark = judgePreferDark();
+            initPreferMode(prefersDark);
+        </script>
     </body>
 </html>
