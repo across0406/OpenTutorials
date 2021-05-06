@@ -83,11 +83,8 @@ function changePreferMode(element) {
             .querySelector('body')
             .style
             .color = 'black';
-        var link_anchors = document.querySelectorAll('a:link');
-        var visited_anchors = document.querySelectorAll('a:visited');
-        console.log(visited_anchors);
+        var link_anchors = document.querySelectorAll('a');
         link_anchors.forEach(element => {element.style.color = 'black'});
-        visited_anchors.forEach(element => {element.style.color = 'gray'});
         isNight = false;
     } else {
         document
@@ -99,10 +96,7 @@ function changePreferMode(element) {
             .style
             .color = 'white';
         var link_anchors = document.querySelectorAll('a:link');
-        var visited_anchors = document.querySelectorAll('a:visited');
-        console.log(visited_anchors);
         link_anchors.forEach(element => element.style.color = 'yellow');
-        visited_anchors.forEach(element => element.style.color = 'green');
         isNight = true;
     }
 }

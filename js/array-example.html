@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEB - JavaScript
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="array-example.js"></script>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="first-content-container">
+                <h1>
+                    Array Syntax
+                </h1>
+                <div id="content-container">
+                    <p>
+                        <h2>
+                            Get
+                        </h2>
+                        <script>
+                            document.write('coworkers[0] = ' + String(getCoworker(0)) + '<br>');
+                            document.write('coworkers[1] = ' + String(getCoworker(1)) + '<br>');
+                        </script>
+                    </p>
+                    <p>
+                        <h2>
+                            Add
+                        </h2>
+                        <script>
+                            var attached = ['duru', 'taeho'];
+                            for(i = 0;i < 2;i++){
+                                addCoworker(attached[0]);
+                                document.write(String(attached[0]) + 'is added to coworker array.<br>');
+                            }
+                        </script>
+                    </p>
+                    <p>
+                        <h2>
+                            Length
+                        </h2>
+                        <script>
+                            document.write('Coworker array\'s length is ' + String(getCoworkersLength()) + '<br>');
+                        </script>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
