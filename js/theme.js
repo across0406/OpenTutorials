@@ -1,14 +1,16 @@
+let isNight = false;
+
 function judgePreferDark() {
     const prefersDark = window.matchMedia && window
         .matchMedia(
             '(prefers-color-scheme: Dark)'
         )
         .matches;
-
-    return prefersDark;
+    
+    isNight = prefersDark;
 }
 
-function initPreferMode(isNight) {
+function initPreferMode() {
     if (isNight) {
         document
             .querySelector('body')
@@ -68,7 +70,7 @@ function initPreferMode(isNight) {
     document
             .getElementById('mode-toggle')
             .style
-            .checked = isNight;    
+            .checked = nightParam;    
 }
 
 function changePreferMode(element) {
@@ -86,6 +88,7 @@ function changePreferMode(element) {
         console.log(visited_anchors);
         link_anchors.forEach(element => {element.style.color = 'black'});
         visited_anchors.forEach(element => {element.style.color = 'gray'});
+        isNight = false;
     } else {
         document
             .querySelector('body')
@@ -100,5 +103,6 @@ function changePreferMode(element) {
         console.log(visited_anchors);
         link_anchors.forEach(element => element.style.color = 'yellow');
         visited_anchors.forEach(element => element.style.color = 'green');
+        isNight = true;
     }
 }

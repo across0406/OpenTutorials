@@ -11,34 +11,69 @@
 
     <body>
         <div id="main-container">
-            <h1>
-                Comparison Operators & Boolean
-            </h1>            
-            <div id="content-container">
-                <p>
-                    1 === 1 => 
-                    <script>
-                        document.write(isEqual(1, 1));
-                    </script>
-                </p>
-                <p>
-                    1 === 2 => 
-                    <script>
-                        document.write(isEqual(1, 2));
-                    </script>
-                </p>
-                <p>
-                    1 < 2 => 
-                    <script>
-                        document.write(isLess(1, 2));
-                    </script>
-                </p>
-                <p>
-                    1 > 2 => 
-                    <script>
-                        document.write(isGreater(1, 2));
-                    </script>
-                </p>
+            <div id="first-content-container">
+                <h1>
+                    Comparison Operators & Boolean
+                </h1>
+                <div id="content-container">
+                    <p>
+                        <h2>
+                            Program
+                        </h2>
+                        <script>
+                            document.write(isEqual(1, 1));
+                        </script>
+                    </p>
+                    <p>
+                        1 === 2 => 
+                        <script>
+                            document.write(isEqual(1, 2));
+                        </script>
+                    </p>
+                    <p>
+                        1 < 2 => 
+                        <script>
+                            document.write(isLess(1, 2));
+                        </script>
+                    </p>
+                    <p>
+                        1 > 2 => 
+                        <script>
+                            document.write(isGreater(1, 2));
+                        </script>
+                    </p>
+                </div>
+            </div>
+            <div id="second-content-container">
+                <h1>
+                    Conditional Statements
+                </h1>
+                <div id="content-container">
+                    <h2>
+                        Program ( Whole )
+                    </h2>
+                    <p>
+                        <script>
+                            operateProgram(true, true);
+                        </script>
+                    </p>
+                    <h2>
+                        IF - true
+                    </h2>
+                    <p>
+                        <script>
+                            operateProgram(false, true);
+                        </script>
+                    </p>
+                    <h2>
+                        IF - false
+                    </h2>
+                    <p>
+                        <script>
+                            operateProgram(false, false);
+                        </script>
+                    </p>
+                </div>
             </div>
         </div>
     </body>
